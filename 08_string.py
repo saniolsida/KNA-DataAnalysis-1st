@@ -71,3 +71,8 @@
 
 word = "abcdefg"
 print(word.find("d"))
+
+email = "hong@company.com"
+at = email.find("@")
+user_id = email[:at]
+print(user_id)

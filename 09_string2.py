@@ -98,6 +98,21 @@
 # index[1] = index[1].strip().lower()
 # print(index[1])
 
-temp = 87
-id = "PUMP_A"
-print(f"설비 {id}, 온도 {temp}도")
+# temp = 87
+# id = "PUMP_A"
+# print(f"설비 {id}, 온도 {temp}도")
+
+# print(f"{18 * 2}")
+
+# value = 87.456
+# print(f"{value:.1F}")
+# print(f"{value:.2F}")
+
+sentence = " 5, sensor_2, WARNING , 0.78912 "
+sentence = sentence.strip()
+list = sentence.split(",")
+temp = int(list[0].strip())
+sens = list[1].strip()
+state = list[2].strip().lower()
+value = float(list[3].strip())
+print(f"[센서 {sens}] 상태 {state}, 측정값 {value:.2f}")

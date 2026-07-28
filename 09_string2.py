@@ -108,11 +108,22 @@
 # print(f"{value:.1F}")
 # print(f"{value:.2F}")
 
-sentence = " 5, sensor_2, WARNING , 0.78912 "
-sentence = sentence.strip()
-list = sentence.split(",")
-temp = int(list[0].strip())
-sens = list[1].strip()
-state = list[2].strip().lower()
-value = float(list[3].strip())
-print(f"[센서 {sens}] 상태 {state}, 측정값 {value:.2f}")
+# sentence = " 5, sensor_2, WARNING , 0.78912 "
+# sentence = sentence.strip()
+# list = sentence.split(",")
+# temp = int(list[0].strip())
+# sens = list[1].strip()
+# state = list[2].strip().lower()
+# value = float(list[3].strip())
+# print(f"[센서 {sens}] 상태 {state}, 측정값 {value:.2f}")
+
+# mixed = ["펌프", 778, True]
+# print(mixed)
+
+# empty = []
+
+temp = [35, 34, 32, 35, 34]
+print(temp)
+print(len(temp))
+empty = []
+print(empty)
